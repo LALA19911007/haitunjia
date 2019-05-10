@@ -1,0 +1,54 @@
+@charset "utf-8";
+/* CSS Document */
+
+.margin{width:1190px;margin:0 auto;}
+
+body{
+    background:#f3f3f3;
+}
+.content{
+    background:#fff;
+    width:1190px;
+    height:500px;
+    overflow: hidden;
+}
+.content .content_cont{
+    width:400px;
+    height: 300px;
+    margin:100px auto;
+}
+.content .content_cont h2{
+    overflow: hidden;
+}
+.content .content_cont h2 span{
+    float: left;
+}
+.content .content_cont h2 small{
+    float: right;
+}
+.content .content_cont .cont{
+
+}
+.content .content_cont .cont span{
+    color: #000;
+    font-weight: 700;
+    float: right;
+}
+.content .content_cont .cont input{
+    width:386px;
+    height:50px;
+    padding-left:14px;
+    border:2px solid #efefef;
+    margin-bottom: 34px;
+}
+.content .content_cont .cont input:nth-child(1){
+    margin-top:12px;
+}
+.content .content_cont .cont #btn{
+    margin-top:12px;
+    width:404px;
+    padding-left: 0;
+    background:#000;
+    color:#fff;
+    font-weight:700;
+}

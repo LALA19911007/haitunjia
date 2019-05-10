@@ -1,0 +1,135 @@
+@charset "utf-8";
+/* CSS Document */
+
+.margin{
+	width: 990px;
+	margin: 0 auto;
+}
+body{
+    width:100%;
+}
+.banner{
+    height: 400px;
+    width:100%;
+}
+.banner img{
+    height: 400px;
+    width:100%;
+}
+#search {
+    float: left;
+    width: 600px;
+    margin: 0 auto;
+    margin: 20px 0 0 107px;
+    position: relative;
+    z-index: 9999999;
+}
+/* 
+#hot .hot_c{ 
+    display: flex;
+    flex-wrap: wrap;
+	justify-content: space-around;
+}
+#hot .hot_c .goods{
+    width:200px;
+	margin-top: 24px;
+}
+#hot .hot_c .goods p:nth-child(3) span:nth-child(1){
+    display: block;
+    float: left;
+    color: #333;
+    font:14px/28px "";
+    font-weight: 700;
+}
+#hot .hot_c .goods p:nth-child(3) span:nth-child(2){
+    display: block;
+    float: right;
+    width: 68px;
+    height: 18px;
+    padding:5px;
+    background:#f42c2e;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+} */
+
+#qiang{
+	/* height: 298px; */
+    border: 1px solid #f0f0f0;
+    /* border-bottom: none; */
+    margin-top: 15px;
+    padding-bottom:20px;
+}
+#qiang .hot_p{
+	height: 45px;
+	border-bottom: 1px solid #e8e8e7;
+	background: #f7f7f7;
+}
+#qiang .hot_p p{
+	width: 194px;
+	height: 45px;
+	border-top: 1px solid #ea4e46;
+	background-color: #fff;
+	font: 14px/45px "";
+	color: #c84723;
+	text-align: center;
+}
+#qiang .hot_c{
+	display: flex;
+    flex-wrap: wrap;
+	justify-content: space-around;
+}
+#qiang .hot_c .goods{
+    width:200px;
+    padding: 0 10px 10px 10px;
+    margin-top: 24px;
+    border:2px solid #f5f5f5;
+}
+#qiang .hot_c .goods:hover{
+    border:2px solid #ea4e46;
+}
+#qiang .hot_c .goods img{
+	display: block;
+	width:150px;
+    height:150px;
+    margin-left: 25px;
+}
+#qiang .hot_c .goods p:nth-child(2){
+	font:12px/16px "";
+	color: #555;
+	height: 32px;
+	overflow: hidden;
+}
+#qiang .hot_c .goods a:hover{
+	color: #ba261a;
+	font:12px/16px "";
+}
+#qiang .hot_c .goods p:nth-child(3){
+	font:12px/18px "";
+	color: #999; 
+	margin-top: 10px;
+}
+#qiang .hot_c .goods p:nth-child(3) span:nth-child(2){
+	font: 14px/18px;
+	color:#ba261a;
+	font-weight: bolder;
+}
+#qiang .hot_c .goods p:nth-child(3) span:nth-child(1){
+    display: block;
+    float: left;
+    color: #333;
+    font:14px/28px "";
+    font-weight: 700;
+}
+#qiang .hot_c .goods p:nth-child(3) span:nth-child(2){
+    display: block;
+    float: right;
+    width: 68px;
+    height: 18px;
+    padding:5px;
+    border-radius: 18px;
+    background:#f42c2e;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+}

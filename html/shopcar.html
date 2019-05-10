@@ -1,0 +1,151 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>海豚家</title>
+<link rel="stylesheet" href="../css/public.css" />
+<link rel="stylesheet" href="../css/index.css" />
+<link rel="stylesheet" href="../css/shopcar.css" />
+</head>
+<body>
+    <header>
+        <div class="margin">
+            <p>您好， <a href="login.html">请登录</a> <a href="register.html">注册</a></p>
+        </div>
+    </header>
+    <div class="search margin">
+        <div class="logo">
+            <a href="index.html">
+                <img src="../images/logo.png" />
+            </a>
+        </div>
+        <!-- <div class="search_box">                   
+			<div class="cont">
+				<span id="txt">水果</span>
+				<ul class="list">
+					<li>水果</li>
+					<li>手机</li>
+					<li>电脑</li>
+					<li>家具</li>
+					<li>电器</li>
+				</ul>
+			</div>
+			<input class="cont" type="text" placeholder="口红" />
+			<a href="list.html"><input type="button" class="btn" value="搜索" /></a>
+			<p>
+				<a href="#">口红</a>
+				<a href="#">香水</a>
+				<a href="#">腕表</a>
+				<a href="#">粉底</a>
+				<a href="#">雅诗兰黛</a>
+				<a href="#">眉粉</a>
+			</p>                
+        </div> -->
+        <div id="search">
+            <input type="text" placeholder="口红">
+            <button onclick="window.location.href = 'list.html'">搜索</button>
+            <ul class="search-res">
+
+            </ul>
+        </div>
+    </div>
+    <div class="content margin" id="gouwuche">
+        <p class="biaoti">全部商品 <span class="num">3</span></p>
+        <table>
+            <thead>
+                <tr>
+                    <td><input type="checkbox" /><span>全选</span></td>
+                    <td><span>商品</span></td>
+                    <td></td>
+                    <td><span>单价</span></td>
+                    <td><span>数量</span></td>
+                    <td><span>小计</span></td>
+                    <td><span>操作</span></td>
+                </tr>
+            </thead>
+            <tbody>
+               
+                
+            </tbody>  
+            <tfoot>
+                <tr>
+                    <td><input type="checkbox" /><span>全选</span></td>
+                    <td></td>
+                    <td></td>
+                    <td><span></span></td>
+                    <td><span>总数</span></td>
+                    <td><span>总价</span></td>
+                    <td><span>全部删除</span></td>
+                </tr>
+            </tfoot>      
+        </table> 
+    </div>
+    <div id="hot" class="margin">
+		<div class="hot_p">
+			<p>热评商品</p>
+		</div>
+		<div class="hot_c">
+			<div class="goods">
+				<img src="../images/hots/goods1.jpg" />
+				<p><a href="xiangqing.html">ARMANI/阿玛尼 最新红气垫遮瑕 透亮 15g 【#3偏白肤色】</a></p>
+				<p><span>商城价：</span><span>¥517.00</span></p>
+			</div>
+			<div class="goods">
+				<img src="../images/hots/goods2.jpg" />
+				<p><a href="xiangqing.html">李佳琦推荐DPC限量豹纹气垫BB霜 #21带替换</a></p>
+				<p><span>商城价：</span><span>¥165.00</span></p>
+			</div>
+			<div class="goods">
+				<img src="../images/hots/goods3.jpg" />
+				<p><a href="xiangqing.html">SWAROVSKI/施华洛世奇 金奇仿水晶BELLA 女士穿孔耳环</a></p>
+				<p><span>商城价：</span><span>¥455.00</span></p>
+			</div>
+			<div class="goods">
+				<img src="../images/hots/goods4.png" />
+				<p><a href="xiangqing.html">纪梵希/GIVENCHY 小羊皮口红/唇膏 3.4g</a></p>
+				<p><span>商城价：</span><span>¥235.00</span></p>
+			</div>
+			<div class="goods">
+				<img src="../images/hots/goods5.jpg" />
+				<p><a href="xiangqing.html">Christian Loubotin CL萝卜丁丝绒亚光 女王权杖口红</a></p>
+				<p><span>商城价：</span><span>¥808.00</span></p>
+			</div>
+			<div class="goods">
+				<img src="../images/hots/goods6.jpg" />
+				<p><a href="xiangqing.html">CRefa S Carat 眼部脸部按摩美容仪</a></p>
+				<p><span>商城价：</span><span>¥1150.00</span></p>
+			</div>
+		</div>
+    </div>
+    <div id="tese" class="margin">
+		<div>
+			<img src="../images/b_1.gif" />
+			<span>7天退货</span>
+		</div>
+		<div>
+			<img src="../images/b_2.gif" />
+			<span>品质承诺</span>
+		</div>
+		<div>
+			<img src="../images/b_3.gif" />
+			<span>破损补寄</span>
+		</div>
+		<div>
+			<img src="../images/b_4.gif" />
+			<span class="last">急速物流</span>
+		</div>
+	</div>
+	<footer>
+		<p>&copy; 霍尔果斯海豚家科技有限公司</p>
+		<p>新疆伊犁州霍尔果斯市友谊路12号310室&nbsp;13581693739</p>
+		<p>新ICP备18001020号-1</p>
+	</footer>
+</body>
+<script src="../js/public.js"></script>
+<script src="../js/move.js"></script>
+<script src="../js/ajax.1.0.js"></script>
+<script src="../js/ajax.2.0.js"></script>
+<script src="../js/cookie.js"></script>
+<script src="../js/car.js"></script>
+<script src="../js/search.js"></script>
+</html>

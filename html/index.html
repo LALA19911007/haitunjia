@@ -1,0 +1,246 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>海豚家</title>
+<link rel="stylesheet" href="../css/public.css" />
+<link rel="stylesheet" href="../css/index.css" />
+</head>
+<body>
+	<header>
+		<div class="margin">
+			<p>您好， <a href="login.html">请登录</a> <a href="register.html">注册</a></p>
+		</div>
+	</header>
+	<div class="search margin">
+		<div class="logo">
+			<a href="index.html">
+				<img src="../images/logo.png" />
+			</a>
+		</div>
+		<!-- <div class="search_box">                    -->
+			<!-- <div class="cont">
+				<span id="txt">水果</span>
+				<ul class="list">
+					<li>水果</li>
+					<li>手机</li>
+					<li>电脑</li>
+					<li>家具</li>
+					<li>电器</li>
+				</ul>
+			</div> -->
+			<!-- <input class="cont" type="text" placeholder="口红" />
+			<a href="list.html"><input type="button" class="btn" value="搜索" /></a>
+			<p>
+				<a href="#">口红</a>
+				<a href="#">香水</a>
+				<a href="#">腕表</a>
+				<a href="#">粉底</a>
+				<a href="#">雅诗兰黛</a>
+				<a href="#">眉粉</a>
+			</p> -->
+		<!-- </div> -->
+		<div id="search">
+			<input type="text" placeholder="口红">
+			<button onclick="window.location.href = 'list.html'">搜索</button>
+			<ul class="search-res">
+
+			</ul>
+		</div>
+		<div class="shopcar">
+			<p><a href="shopcar.html">我的购物车</a></p>
+		</div>
+	</div>
+	<nav class="margin">
+		<div class="all">
+			<p class="all_p"><a href="#">全部商品分类</a></p>
+			<div class="caidan">
+				<ul class="erji">
+					<li>
+						<h4><img src="../images/one.png" />美容护肤</h4>
+						<p><a href="#">彩妆</a><a href="#">防晒</a><a href="#">香水</a><a href="#">面膜</a></p>
+					</li>
+					<li>
+						<h4><img src="../images/two.png" />母婴儿童</h4>
+						<p><a href="#">驱蚊</a><a href="#">儿童防晒</a><a href="#">日常养护</a><a href="#">纸尿裤</a></p>
+					</li>
+					<li>
+						<h4><img src="../images/three.png" />箱包配饰</h4>
+						<p><a href="#">包包</a><a href="#">首饰</a><a href="#">腕表</a><a href="#">配饰品</a></p>
+					</li>
+					<li>
+						<h4><img src="../images/four.png" />家居生活</h4>
+						<p><a href="#">防晒用品</a><a href="#">水杯</a><a href="#">香薰</a><a href="#">口罩/眼罩</a></p>
+					</li>
+				</ul>
+				<div class="sanji">
+					<p class="p1"><span>|&nbsp;&nbsp;彩妆&nbsp;&nbsp;</span><span>|&nbsp;&nbsp;防晒&nbsp;&nbsp;</span><span>|&nbsp;&nbsp;唇膏/口红&nbsp;&nbsp;</span><span>|&nbsp;&nbsp;香水&nbsp;&nbsp;</span><span>|&nbsp;&nbsp;眼霜/眼膜&nbsp;&nbsp;</span><span>|&nbsp;&nbsp;精华&nbsp;&nbsp;</span><span>|&nbsp;&nbsp;化妆水&nbsp;&nbsp;</span><span>|&nbsp;&nbsp;清洁&nbsp;&nbsp;</span><span>|&nbsp;&nbsp;卸妆&nbsp;&nbsp;</span><span>|&nbsp;&nbsp;护肤套装&nbsp;&nbsp;</span><span>|&nbsp;&nbsp;美妆工具&nbsp;&nbsp;</span><span>|&nbsp;&nbsp;乳液&nbsp;&nbsp;</span><span>|&nbsp;&nbsp;面膜&nbsp;&nbsp;</span><span>|&nbsp;&nbsp;洗发护发&nbsp;&nbsp;</span><span>|&nbsp;&nbsp;身体护理&nbsp;&nbsp;</span><span>|&nbsp;&nbsp;口腔护理&nbsp;&nbsp;</span><span>|&nbsp;&nbsp;护手霜&nbsp;&nbsp;</span><span>|&nbsp;&nbsp;男士护肤&nbsp;&nbsp;</span></p>
+					<p class="p2"><span>|&nbsp;&nbsp;驱蚊&nbsp;&nbsp;</span><span>|&nbsp;&nbsp;儿童防晒&nbsp;&nbsp;</span><span>|&nbsp;&nbsp;日常养护&nbsp;&nbsp;</span><span>|&nbsp;&nbsp;纸尿裤&nbsp;&nbsp;</span><span>|&nbsp;&nbsp;奶粉&nbsp;&nbsp;</span><span>|&nbsp;&nbsp;奶瓶餐具&nbsp;&nbsp;</span><span>|&nbsp;&nbsp;儿童洗护&nbsp;&nbsp;</span><span>|&nbsp;&nbsp;辅食&nbsp;&nbsp;</span><span>|&nbsp;&nbsp;玩具&nbsp;&nbsp;</span></p>
+					<p class="p3"><span>|&nbsp;&nbsp;包包&nbsp;&nbsp;</span><span>|&nbsp;&nbsp;首饰&nbsp;&nbsp;</span><span>|&nbsp;&nbsp;腕表&nbsp;&nbsp;</span><span>|&nbsp;&nbsp;配饰品&nbsp;&nbsp;</span></p>
+					<p class="p4"><span>|&nbsp;&nbsp;防晒用品&nbsp;&nbsp;</span><span>|&nbsp;&nbsp;家用电器&nbsp;&nbsp;</span><span>|&nbsp;&nbsp;清洁用品&nbsp;&nbsp;</span><span>|&nbsp;&nbsp;女性护理&nbsp;&nbsp;</span><span>|&nbsp;&nbsp;厨房用品&nbsp;&nbsp;</span><span>|&nbsp;&nbsp;口罩/眼罩&nbsp;&nbsp;</span><span>|&nbsp;&nbsp;水杯&nbsp;&nbsp;</span><span>|&nbsp;&nbsp;床上用品&nbsp;&nbsp;</span><span>|&nbsp;&nbsp;女性护理&nbsp;&nbsp;</span><span>|&nbsp;&nbsp;女性护理&nbsp;&nbsp;</span><span>|&nbsp;&nbsp;女性护理&nbsp;&nbsp;</span></p>
+				</div>
+			</div>	
+		</div>
+		<ul class="daohang">
+			<li><a href="index.html" class="active">首页</a></li>
+			<li><a href="huodong.html">限时抢购</a></li>
+			<li><a href="#">商家入驻</a></li>
+		</ul>
+	</nav>
+	<div id="banner">
+		<div class="box">
+			<a><img src="../images/1.png" alt=""></a>
+			<a><img src="../images/2.png" alt=""></a>
+			<a><img src="../images/3.png" alt=""></a>
+			<a><img src="../images/4.png" alt=""></a>
+			<a><img src="../images/5.png" alt=""></a>
+			<div class="btns">
+				<input type="button" id="left" value="<">
+				<input type="button" id="right" value=">">
+			</div>
+		</div>
+	</div>
+	<div id="hot" class="margin">
+		<div class="hot_p">
+			<p>热评商品</p>
+		</div>
+		<div class="hot_c">
+			
+		</div>
+	</div>
+	<div class="floor floor1 margin">
+		<div class="floor_l">
+			<h2>1F 美容护肤</h2>
+			<img src="../images/floor1/pic.jpg" />
+			<div class="like">
+				<p>大家还喜欢了</p>
+				<span>彩妆</span>
+				<span>防晒</span>
+				<span>唇膏/口红</span>
+				<span>香水</span>
+				<span>面膜</span>
+				<span>眼霜/眼膜</span>
+				<span>精华</span>
+				<span>化妆水</span>
+				<span>清洁</span>
+				<span>卸妆</span>
+				<span>护肤套装</span>
+			</div>
+		</div>
+		<div class="floor_r">
+			<p>商品推荐</p>
+			<div class="floor_r_goods floor_r_goods1">
+				<!-- <div class="goods_list">
+					<img src="../images/floor1/goods1.jpg">
+					<p><a href="xiangqing.html">xixi 腮红正品裸妆持久保湿提亮</a></p>
+					<p><span>¥9.9</span><span>33.00</span></p>
+				</div> -->
+			</div>
+		</div>
+	</div>
+	<div class="floor floor2 margin">
+		<div class="floor_l">
+			<h2>2F 母婴儿童</h2>
+			<img src="../images/floor2/pic.jpg" />
+			<div class="like">
+				<p>大家还喜欢了</p>
+				<span>驱蚊</span>
+				<span>儿童防晒</span>
+				<span>日常养护</span>
+				<span>纸尿裤</span>
+				<span>奶粉</span>
+			</div>
+		</div>
+		<div class="floor_r">
+			<p class="p2">商品推荐</p>
+			<div class="floor_r_goods floor_r_goods2">
+				<!-- <div class="goods_list">
+					<img src="../images/floor2/goods1.jpg">
+					<p><a href="xiangqing.html">xixi 腮红正品裸妆持久保湿提亮</a></p>
+					<p><span>¥9.9</span><span>33.00</span></p>
+				</div> -->
+			</div>
+		</div>
+	</div>
+	<div class="floor floor3 margin">
+		<div class="floor_l">
+			<h2>3F 箱包配饰</h2>
+			<img src="../images/floor3/pic.png" />
+			<div class="like">
+				<p>大家还喜欢了</p>
+				<span>手拎包</span>
+				<span>双肩包</span>
+				<span>古驰</span>
+				<span>拉杆箱</span>
+				<span>手链</span>
+			</div>
+		</div>
+		<div class="floor_r">
+			<p class="p3">商品推荐</p>
+			<div class="floor_r_goods floor_r_goods3">
+				<!-- <div class="goods_list">
+					<img src="../images/floor3/goods1.jpg">
+					<p><a href="xiangqing.html">xixi 腮红正品裸妆持久保湿提亮</a></p>
+					<p><span>¥9.9</span><span>33.00</span></p>
+				</div> -->
+			</div>
+		</div>
+	</div>
+	<div class="floor floor4 margin">
+		<div class="floor_l">
+			<h2>4F 家居生活</h2>
+			<img src="../images/floor4/pic.png" />
+			<div class="like">
+				<p>大家还喜欢了</p>
+				<span>防晒用品</span>
+				<span>水杯</span>
+				<span>香薰</span>
+				<span>皮革养护</span>
+				<span>眼罩</span>
+				<span>口罩</span>
+				<span>车载用品</span>
+			</div>
+		</div>
+		<div class="floor_r">
+			<p class="p4">商品推荐</p>
+			<div class="floor_r_goods floor_r_goods4">
+				<!-- <div class="goods_list">
+					<img src="../images/floor4/goods1.jpg">
+					<p><a href="xiangqing.html">xixi 腮红正品裸妆持久保湿提亮</a></p>
+					<p><span>¥9.9</span><span>33.00</span></p>
+				</div> -->
+			</div>
+		</div>
+	</div>
+	<div id="tese" class="margin">
+		<div>
+			<img src="../images/b_1.gif" />
+			<span>7天退货</span>
+		</div>
+		<div>
+			<img src="../images/b_2.gif" />
+			<span>品质承诺</span>
+		</div>
+		<div>
+			<img src="../images/b_3.gif" />
+			<span>破损补寄</span>
+		</div>
+		<div>
+			<img src="../images/b_4.gif" />
+			<span class="last">急速物流</span>
+		</div>
+	</div>
+	<footer>
+		<p>&copy; 霍尔果斯海豚家科技有限公司</p>
+		<p>新疆伊犁州霍尔果斯市友谊路12号310室&nbsp;13581693739</p>
+		<p>新ICP备18001020号-1</p>
+	</footer>
+</body>
+<script src="../js/public.js"></script>
+<script src="../js/move.js"></script>
+<script src="../js/ajax.1.0.js"></script>
+<script src="../js/ajax.2.0.js"></script>
+<script src="../js/cookie.js"></script>
+<script src="../js/index.js"></script>
+<script src="../js/search.js"></script>
+</html>

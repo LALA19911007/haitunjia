@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>海豚家</title>
+    <link rel="stylesheet" href="../css/public.css" />
+    <link rel="stylesheet" href="../css/index.css" />
+    <link rel="stylesheet" href="../css/login.css" />
+</head>
+<body>
+   
+    <div class="search margin">
+        <div class="logo">
+            <a href="index.html">
+                <img src="../images/logo.png" />
+            </a>
+        </div>
+    </div>
+    <div class="content margin">
+        <div class="content_cont">
+            <h2>登录<small><a href="register.html">还没有账号去注册</a></small></h2>
+            <div class="cont">
+                <input type="text" id="user" placeholder="请输入你的用户名"><br>
+                <input type="text" id="pass" placeholder="请输入你的密码"><br>
+                <input type="button" value="登录" id="btn"><br>
+                <span></span>
+            </div> 
+        </div>
+        
+    </div>
+    
+    <footer>
+        <p>&copy; 霍尔果斯海豚家科技有限公司</p>
+        <p>新疆伊犁州霍尔果斯市友谊路12号310室&nbsp;13581693739</p>
+        <p>新ICP备18001020号-1</p>
+    </footer>
+</body>
+<script src="../js/jquery.js"></script>
+<script>
+
+    class Login{
+        constructor(){
+            this.url = "http://www.icodeilife.cn/ctrl/login.php";
+            this.btn = $("#btn");
+            this.user = $("#user");
+            this.pass = $("#pass");
+            this.span = $("span");
+
+            this.init()
+        }
+        init(){
+            var that = this;
+            this.btn.click(function(){
+                that.load()
+            })
+        }
+        load(){
+            var that = this;
+            $.ajax({
+                url:this.url,
+                data:{
+                    user:this.user.val(),
+                    pass:this.pass.val()
+                },
+                success:function(res){
+                    switch(res){
+                        case "0":
+                            that.span.html("用户名密码不符");break;
+                        case "1":
+                            that.span.html("请重新登陆");break;
+                        default:
+                            that.span.html("登录成功，正在跳转");
+                            setTimeout(() => {
+                                location.href = "index.html";
+                            }, 3000);
+                            that.res = JSON.parse(res);
+                            that.display()
+                    }
+                },
+                beforeSend:function(){
+                    that.span.html("<img src='loading.gif'>")
+                }
+            })
+        }
+        display(){
+            console.log(this.res)
+        }
+    }
+
+    new Login()
+</script>
+</html>

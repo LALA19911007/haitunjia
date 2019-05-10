@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>海豚家</title>
+    <link rel="stylesheet" href="../css/public.css" />
+    <link rel="stylesheet" href="../css/index.css" />
+    <link rel="stylesheet" href="../css/login.css" />
+</head>
+<body>
+    
+    <div class="search margin">
+        <div class="logo">
+            <a href="index.html">
+                <img src="../images/logo.png" />
+            </a>
+        </div>
+    </div>
+    <div class="content margin">
+        <div class="content_cont">
+            <h2>注册<small><a href="login.html">已有账号去登录</a></small></h2>
+            <div class="cont">
+                <input type="text" id="user" placeholder="请输入你的用户名"><br>
+                <input type="text" id="pass" placeholder="请输入你的密码"><br>
+                <input type="button" value="注册" id="btn"><br>
+                <span></span>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 霍尔果斯海豚家科技有限公司</p>
+        <p>新疆伊犁州霍尔果斯市友谊路12号310室&nbsp;13581693739</p>
+        <p>新ICP备18001020号-1</p>
+    </footer>
+</body>
+<script src="../js/jquery.js"></script>
+<script>
+    class Login{
+        constructor(){
+            this.url = "http://www.icodeilife.cn/ctrl/register.php";
+            this.btn = $("#btn");
+            this.user = $("#user");
+            this.pass = $("#pass");
+            this.span = $("span");
+
+            this.init()
+        }
+        init(){
+            var that = this;
+            this.btn.click(function(){
+                that.load(0)
+            })
+        }
+        load(){
+            var that = this;
+            $.ajax({
+                url:this.url,
+                data:{
+                    tel:this.user.val(),
+                    pass:this.pass.val()
+                },
+                success:function(res){
+                    switch(res){
+                        case "0":
+                            that.span.html("你的名字太火啦，换一个把");break;
+                        case "1":
+                            that.span.html("恭喜你，注册成功，3秒后跳转到登录");
+                            setTimeout(() => {
+                                location.href = "login.html";
+                            }, 3000);
+                            break;
+                        case "2":
+                            that.span.html("你的数据不全");break;
+                    }
+                },
+                beforeSend:function(){
+                    that.span.html("<img src='loading.gif'>")
+                }
+            })
+        }
+    }
+
+    new Login()
+</script>
+</html>
